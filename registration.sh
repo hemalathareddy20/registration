@@ -1,9 +1,9 @@
 echo "Welcome of the User Registration program being solved in the Master Branch"
 read -p "enter atleast 8 charcters password: " password
-pat1="^[0-9a-zA-Z]{8,}"
-if(($password =~ $pat1))
+pat2="^[0-9a-zA-Z{1,}]{8,}$"
+if(($password =~ $pat2))
 then
-      echo "$password have atleast 8 characters"
+      echo "$password have atleast 1 upper case"
 else
      echo "invalid password"
 fi
