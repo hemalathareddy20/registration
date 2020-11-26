@@ -1,9 +1,9 @@
 echo "Welcome of the User Registration program being solved in the Master Branch"
-read -p "enter a valid mobile number: " mobilenumber
-pat="[0-9]{2}[ ]?[0-9]{10}$"
-if(($mobilenumber =~ $pat))
+read -p "enter atleast 8 charcters password: " password
+pat1="^[0-9a-zA-Z]{8,}"
+if(($password =~ $pat1))
 then
-      echo "$mobilenumber is a valid mobile number"
+      echo "$password have atleast 8 characters"
 else
-     echo "invalid mobile number"
+     echo "invalid password"
 fi
